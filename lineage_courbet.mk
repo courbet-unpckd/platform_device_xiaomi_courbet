@@ -14,6 +14,15 @@ $(call inherit-product, device/xiaomi/courbet/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Rising Os
+RISING_MAINTAINER := ygherna
+RISING_CHIPSET := Snapdragon732G
+TARGET_USE_PIXEL_FINGERPRINT := true
+TARGET_ENABLE_BLUR := true
+TARGET_EXCLUDES_AUDIOFX := true
+TARGET_CORE_GMS := false
+WITH_GMS := true
+
 PRODUCT_NAME := lineage_courbet
 PRODUCT_DEVICE := courbet
 PRODUCT_BRAND := Xiaomi
